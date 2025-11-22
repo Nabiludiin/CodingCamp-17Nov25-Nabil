@@ -1,4 +1,3 @@
-// 1. Prompt Nama saat load
 window.onload = function() {
     let user = prompt("Halo! Siapa nama panggilan Anda?", "Guest");
     if (user) {
@@ -9,7 +8,6 @@ window.onload = function() {
 document.getElementById('portfolio-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // Ambil data
     let nama = document.getElementById('inp-nama').value;
     let email = document.getElementById('inp-email').value;
     let kategori = document.getElementById('inp-kategori').value;
@@ -29,7 +27,6 @@ document.getElementById('portfolio-form').addEventListener('submit', function(e)
         <p class="blink">_</p>
     `;
 
-    // Masukkan ke dalam kotak terminal
     document.getElementById('result-area').innerHTML = outputHTML;
 
     alert("Pesan berhasil 'dikirim' ke terminal!");

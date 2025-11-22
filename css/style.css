@@ -162,8 +162,29 @@ nav {
     background-position: center;
 }
 
-.gallery-bg { background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%); }
-.hotel-bg { background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); }
+/* Placeholder gradients untuk gambar project */
+/* .gallery-bg { background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%); }
+.hotel-bg { background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); } */
+
+.uiux-bg {
+    /* Gradien warna Ungu ke Pink (Khas UI/UX) */
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    
+    /* JIKA INGIN PAKAI FOTO ASLI, hapus baris atas dan gunakan ini: */
+    background-image: url('../assets/uiux-design.jpg');
+}
+
+/* Untuk Card Galeri */
+.gallery-bg {
+    background-image: url('../assets/galeri-project.jpg');
+    background-color: #fbc2eb; 
+}
+
+
+.hotel-bg {
+    background-image: url('../assets/hotel-project.jpg');
+    background-color: #84fab0; 
+}
 
 .tag {
     position: absolute;
@@ -238,5 +259,5 @@ footer { text-align: center; padding: 30px; font-size: 0.9rem; color: var(--text
     .hero { flex-direction: column; text-align: center; padding-top: 40px; }
     .hero-content { margin-bottom: 40px; }
     .contact-layout { flex-direction: column; }
-    .nav-links { display: none; } /* Bisa ditambah hamburger menu */
+    .nav-links { display: none; }
 }
